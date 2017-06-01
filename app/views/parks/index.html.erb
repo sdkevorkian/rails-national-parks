@@ -1,0 +1,8 @@
+<h1>Look at all my parks</h1>
+<div class="main">
+    <ul>
+    <% @parks.each do |park|%>
+        <a href="/parks/<%=park.id%>"><li><%=park.name%>: <%=park.description%></li></a>
+    <%end%>
+    </ul>
+</div>

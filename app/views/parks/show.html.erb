@@ -1,0 +1,8 @@
+
+<h1><%=@park.name%></h1>
+<p><%=@park.description%></p>
+<img src="<%=@park.picture%>">
+
+<p><a href="/parks/<%=@park.id%>/edit"><button>edit</button></a>
+<button><%= link_to "Zone this park for business development", park_path(@park.id), method: :delete%></button>
+</p>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsNationalParks</title>
+    <%= csrf_meta_tags %>
+    <link rel="shortcut icon" href="/nationalparks.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+
+  </body>
+  <footer>
+    <a href="/">Home</a>
+    </footer>
+</html>
