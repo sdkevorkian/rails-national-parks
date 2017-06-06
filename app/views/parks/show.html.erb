@@ -6,3 +6,8 @@
 <p><a href="/parks/<%=@park.id%>/edit"><button>edit</button></a>
 <button><%= link_to "Zone this park for business development", park_path(@park.id), method: :delete%></button>
 </p>
+
+<h2>Rangers</h2>
+<% for ranger in @rangers do %>
+    <p><a href="/rangers/<%=ranger.id%>" class="listed"><%=ranger.name%></a></p>
+  <%end%>

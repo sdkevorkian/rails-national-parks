@@ -14,6 +14,7 @@ class RangersController < ApplicationController
 
   def show
     @ranger = Ranger.find(params[:id])
+    @parks = Ranger.find(params[:id]).parks
   end
 
   def edit
@@ -27,6 +28,7 @@ class RangersController < ApplicationController
   end
 
   def destroy
+    Ranger.find(params[:id]).parks.clear
     Ranger.find(params[:id]).delete
     redirect_to rangers_path
   end

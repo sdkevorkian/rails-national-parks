@@ -63,3 +63,15 @@ li {
 form {
     margin: 2em 0;
 }
+
+.form-chunk {
+    margin: 1em;
+}
+
+.listed {
+    color: #5C4A47;
+}
+
+.listed:hover {
+    color: white;
+}
