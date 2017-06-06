@@ -1,0 +1,5 @@
+<h1><%=@ranger.name%></h1>
+
+<p><a href="/rangers/<%=@ranger.id%>/edit"><button>edit</button></a>
+<button><%= link_to "Fire this employee", ranger_path(@ranger.id), method: :delete%></button>
+</p>

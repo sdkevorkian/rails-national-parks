@@ -1,0 +1,10 @@
+<h1>look at all these Rangers</h1>
+<div class="main">
+  <ul>
+    <% @rangers.each do |ranger| %>
+        <a href="/rangers/<%=ranger.id%>"><li><%=ranger.name%></li></a>
+    <%end%>
+  </ul>
+
+  <h4><a href="/rangers/new">Add a Ranger</a></h4>
+</div>
